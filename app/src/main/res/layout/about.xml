@@ -33,7 +33,7 @@
             android:layout_centerInParent="true"
             android:gravity="center"
             style="@style/Label.Shadow"
-            android:text="关于"
+            android:text="About"
             android:textSize="20.0sp" />
 
     </RelativeLayout>
@@ -139,6 +139,7 @@
                 android:layout_below="@id/upgradeLayout"
                 android:clickable="true"
                 android:focusable="true"
+                android:visibility="gone"
                 android:orientation="horizontal">
 
                 <TextView

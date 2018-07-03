@@ -181,7 +181,7 @@ public class AutoStartFragment extends BaseFragment {
             }
             if (canDisableCom > 0) {
                 bottom_lin.setVisibility(View.VISIBLE);
-                disableButton.setText("可优化" + canDisableCom + "款");
+                disableButton.setText("Optimizable " + canDisableCom + "");
             } else {
                 bottom_lin.setVisibility(View.GONE);
             }

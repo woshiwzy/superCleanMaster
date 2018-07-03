@@ -39,7 +39,6 @@ public abstract class BaseActivity extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		// requestWindowFeature(Window.FEATURE_NO_TITLE);
 		// getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -57,7 +56,6 @@ public abstract class BaseActivity extends FragmentActivity {
 
 	@Override
 	public void setContentView(int layoutResID) {
-		// TODO Auto-generated method stub
 		super.setContentView(layoutResID);
 		ButterKnife.inject(this);
 

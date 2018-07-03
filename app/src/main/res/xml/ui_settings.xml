@@ -4,12 +4,12 @@
     <PreferenceCategory android:title="@string/category_def">
         <Preference
             android:key="createShortCut"
-            android:title="创建&quot;一键加速&quot;快捷方式" />
+            android:title="Create shortcut" />
         <SwitchPreference
             android:key="powerClear"
-            android:title="强力清理"
+            android:title="Strong Clean"
             android:enabled="false"
-            android:summary="此功能需要root权限" />
+            android:summary="This need root" />
 
     </PreferenceCategory>
 
@@ -24,15 +24,10 @@
             android:title="@string/settings_grade" />
         <Preference
             android:key="pVersionDetail"
-            android:title="版本信息" />
+            android:title="Version Info" />
         <Preference
             android:key="pVersion"
             android:title="@string/settings_version_update" />
-        <Preference
-            android:key="pGithub"
-            android:title="Github"
-            android:summary="github.com/joyoyao/superCleanMaster"
-            />
 
         <Preference
             android:key="pAbout"

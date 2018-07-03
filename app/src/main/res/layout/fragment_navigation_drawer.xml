@@ -45,7 +45,7 @@
                     android:paddingEnd="0dp"
                     android:paddingLeft="17dp"
                     android:paddingRight="0dp"
-                    android:text="首页"
+                    android:text="Home"
                     android:textColor="@drawable/drawer_selector_font"
                     android:textSize="17sp" />
             </RelativeLayout>
@@ -63,6 +63,7 @@
                 android:paddingRight="0dp"
                 android:text="轻松一下"
                 android:textColor="@drawable/drawer_selector_font"
+                android:visibility="gone"
                 android:textSize="17sp" />
 
             <RadioButton
@@ -76,7 +77,7 @@
                 android:gravity="center_vertical|left"
                 android:paddingLeft="17dp"
                 android:paddingRight="0dp"
-                android:text="设置"
+                android:text="Setting"
                 android:textColor="@drawable/drawer_selector_font"
                 android:textSize="17sp" />
 

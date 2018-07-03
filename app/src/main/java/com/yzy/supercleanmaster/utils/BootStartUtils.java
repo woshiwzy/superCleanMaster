@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 www.amsoft.cn
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -111,6 +111,15 @@ public class BootStartUtils {
                 isSystem = false;
             }
             for (int i = 1; i < resolveInfoList.size(); i++) {
+
+                String tinfo = resolveInfoList.get(i).activityInfo.taskAffinity;
+
+
+                if (null!=tinfo && tinfo.equalsIgnoreCase(mContext.getPackageName())) {
+                    continue;
+                }
+
+
                 AutoStartInfo mAutoStartInfo = new AutoStartInfo();
                 if (appName.equals(resolveInfoList.get(i).loadLabel(pm).toString())) {
                     packageReceiver = packageReceiver + ";" + resolveInfoList.get(i).activityInfo.packageName + "/" + resolveInfoList.get(i).activityInfo.name;

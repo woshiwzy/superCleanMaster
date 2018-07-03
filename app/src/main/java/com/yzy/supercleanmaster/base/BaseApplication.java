@@ -4,11 +4,13 @@ import android.app.Application;
 import android.content.Context;
 
 public class BaseApplication extends Application {
+
+    public static String tag="clean";
+
+
     private static BaseApplication mInstance;
 
-
     private Context mContext;
-
 
     // private Gson mG;
     public static BaseApplication getInstance() {

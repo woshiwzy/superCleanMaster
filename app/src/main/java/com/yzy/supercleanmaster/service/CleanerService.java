@@ -20,6 +20,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.yzy.supercleanmaster.R;
+import com.yzy.supercleanmaster.base.BaseApplication;
 import com.yzy.supercleanmaster.model.CacheListItem;
 
 import java.lang.reflect.InvocationTargetException;
@@ -179,6 +180,11 @@ public class CleanerService extends Service {
                 countDownLatch.await();
             } catch (InvocationTargetException | InterruptedException | IllegalAccessException e) {
                 e.printStackTrace();
+
+
+                Log.i(BaseApplication.tag,"clean gc exception:");
+
+
             }
 
             return mCacheSize;

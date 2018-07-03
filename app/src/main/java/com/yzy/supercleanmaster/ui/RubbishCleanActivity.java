@@ -27,8 +27,6 @@ import android.widget.Toast;
 
 import com.etiennelawlor.quickreturn.library.enums.QuickReturnType;
 import com.etiennelawlor.quickreturn.library.listeners.QuickReturnListViewOnScrollListener;
-import com.nhaarman.listviewanimations.appearance.simple.SwingBottomInAnimationAdapter;
-import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.OnDismissCallback;
 import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.adapter.RublishMemoryAdapter;
 import com.yzy.supercleanmaster.base.BaseSwipeBackActivity;
@@ -48,7 +46,7 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 
 
-public class RubbishCleanActivity extends BaseSwipeBackActivity implements OnDismissCallback, CleanerService.OnActionListener {
+public class RubbishCleanActivity extends BaseSwipeBackActivity implements  CleanerService.OnActionListener {
 
     ActionBar ab;
     protected static final int SCANING = 5;
@@ -58,7 +56,6 @@ public class RubbishCleanActivity extends BaseSwipeBackActivity implements OnDis
     protected static final int PROCESS_PROCESS = 9;
 
     private static final int INITIAL_DELAY_MILLIS = 300;
-    SwingBottomInAnimationAdapter swingBottomInAnimationAdapter;
     Resources res;
     int ptotal = 0;
     int pprocess = 0;
@@ -153,10 +150,6 @@ public class RubbishCleanActivity extends BaseSwipeBackActivity implements OnDis
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onDismiss(@NonNull ViewGroup viewGroup, @NonNull int[] ints) {
-
-    }
 
     @Override
     public void onScanStarted(Context context) {
